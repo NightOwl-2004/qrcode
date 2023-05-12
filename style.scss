@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+// Variables
+$container-bg-color: hsl(0, 0%, 100%);
+$body-bg-color: hsl(212, 45%, 89%);
+$dark-blue: hsl(218, 44%, 22%);
+$grayish-blue: hsl(220, 15%, 55%);
+
+@mixin flexbox-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: $body-bg-color;
+  height: 100vh;
+  @include flexbox-col();
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  background-color: $container-bg-color;
+  padding: 15px 20px;
+  height: 550px;
+  width: 350px;
+  border-radius: 25px;
+  @include flexbox-col();
+  gap: 40px;
+  box-shadow: 1px 5px 10px black;
+}
+
+#qr-code {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#dark-text {
+  color: $dark-blue;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#light-text {
+  color: $grayish-blue;
+  font-weight: 400;
+  font-size: 0.938rem;
+  margin-top: 20px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0px;
+    background-color: dodgerblue;
+    width: 100vw;
+    height: 3vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution a{
+    text-decoration: underline;
+    color: wheat;
+}
