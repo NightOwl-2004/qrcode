@@ -18,7 +18,7 @@ This is my first solution upload on frontend mentor. Hence, I could not upload m
 ![](./screenshot.png)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://aniket200-ind.github.io/qrcode/]
 
 ### Built with
 
